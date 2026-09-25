@@ -1,0 +1,300 @@
+/* Login / sign-up / admin pages */
+
+.auth-wrap {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 56px 20px 80px;
+}
+
+.auth-card h1 {
+  font-size: 1.6rem;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 6px;
+  background: #f2ede8;
+  padding: 5px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.auth-tabs button {
+  flex: 1;
+  padding: 9px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.auth-tabs button:active {
+  transform: scale(0.95);
+}
+
+.auth-tabs button.active {
+  background: #17110f;
+  color: #fff;
+}
+
+.field {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.field .input {
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+.form-error {
+  min-height: 1.2em;
+  margin: 0 0 10px;
+  color: #d63b3b;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.form-hint {
+  margin-top: 14px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.auth-submit {
+  width: 100%;
+}
+
+.auth-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-ghost {
+  background: #f2ede8;
+  color: var(--foreground);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ---------- Admin ---------- */
+
+.admin-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.admin-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.admin-head h1 {
+  font-size: 2rem;
+}
+
+.admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.admin-actions .btn {
+  padding: 11px 22px;
+}
+
+.link-btn {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-decoration: underline;
+}
+
+.link-btn:hover {
+  color: var(--coral);
+}
+
+.link-btn.danger:hover {
+  color: #d63b3b;
+}
+
+.link-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  background: #fff;
+  border: 2px solid rgba(23, 17, 15, 0.05);
+  border-radius: 20px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.admin-table th {
+  text-align: left;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  padding: 12px 14px;
+}
+
+.admin-table td {
+  padding: 10px 14px;
+  border-top: 1px solid rgba(23, 17, 15, 0.06);
+  vertical-align: middle;
+}
+
+.admin-table small {
+  color: var(--muted);
+}
+
+/* Phones: turn each table row into a small card so nothing needs sideways scrolling. */
+@media (max-width: 640px) {
+  .table-wrap {
+    overflow-x: visible;
+  }
+  .admin-table thead {
+    display: none;
+  }
+  .admin-table,
+  .admin-table tbody {
+    display: block;
+    width: 100%;
+  }
+  .admin-table tr {
+    display: grid;
+    grid-template-columns: 24px 52px minmax(0, 1fr);
+    column-gap: 10px;
+    padding: 12px 14px;
+  }
+  .admin-table tr + tr {
+    border-top: 1px solid rgba(23, 17, 15, 0.06);
+  }
+  .admin-table td {
+    display: block;
+    grid-column: 3;
+    min-width: 0;
+    padding: 2px 0;
+    border: 0;
+    overflow-wrap: anywhere;
+  }
+  .admin-table td[data-label]::before {
+    content: attr(data-label) ": ";
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  .admin-table td.num-col {
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    text-align: left;
+  }
+  .admin-table td.thumb-col {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+  }
+  .admin-table .row-actions {
+    white-space: normal;
+    text-align: left;
+    padding-top: 6px;
+  }
+  .admin-table .row-actions > * {
+    margin: 0 12px 0 0;
+  }
+  .admin-table.users-table tr {
+    grid-template-columns: 24px minmax(0, 1fr);
+  }
+  .admin-table.users-table td {
+    grid-column: 2;
+  }
+  .admin-table.users-table td.num-col {
+    grid-column: 1;
+  }
+}
+
+.num-col {
+  width: 1%;
+  color: var(--muted);
+  font-weight: 800;
+  text-align: right;
+}
+
+.admin-thumb {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.row-actions {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.row-actions > * {
+  margin-left: 12px;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--yellow);
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.editor {
+  margin-bottom: 24px;
+}
+
+.color-input {
+  height: 42px;
+  padding: 4px;
+}
+
+.photo-preview img {
+  margin-top: 10px;
+  width: 140px;
+  height: 140px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 2px solid rgba(23, 17, 15, 0.08);
+}
+
+.editor-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.editor-actions .btn {
+  padding: 12px 26px;
+}

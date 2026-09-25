@@ -1,0 +1,49 @@
+Ubiquitous Craft practice site - image credits
+Photos from Wikimedia Commons. Cropped to squares and resized; otherwise unmodified.
+CC BY / CC BY-SA licenses require attribution; keep this file with the images.
+
+images/products/winged-dragon-figurine.jpg
+  Author: Creative Tools
+  License: CC BY 2.0
+  Source: https://commons.wikimedia.org/wiki/File:CreativeTools.se_-_PackshotCreator_-_3D_printed_dragon_model.jpg
+
+images/products/ripple-twist-vase.jpg
+  Author: D Eaketts
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:3D_Printed_Vase.jpg
+
+images/products/lucky-cat-mini-planter.jpg
+  Author: Sumanbargavr
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:3d_printed_Cat.jpg
+
+images/products/honeycomb-trinket-dish.jpg
+  Author: D22627
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:3D_Printed_Hexagon_Dish.jpg
+
+images/products/piggy-coin-bank.jpg
+  Author: Sumanbargavr
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:3d_printed_Piggy..webp
+
+images/products/lil-elephant-figurine.jpg
+  Author: C13m3n7
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:Impression_3D_d%27un_elephant_(1).JPG
+
+images/products/bloom-drop-earrings.jpg
+  Author: CarolineKaup
+  License: CC BY-SA 3.0
+  Source: https://commons.wikimedia.org/wiki/File:Ear_Lollies_by_Mutating_Creatures.jpg
+
+images/products/twist-star-hoop-earrings.jpg
+  Author: Green Lining
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:Biodegradable_PLA_flower.jpg
+
+images/bg/hero.jpg
+  Author: Creative Tools from Halmstad, Sweden
+  License: CC BY 2.0
+  Source: https://commons.wikimedia.org/wiki/File:Stacking_box_v03_(16426523399).jpg
+

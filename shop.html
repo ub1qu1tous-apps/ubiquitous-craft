@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Ubiquitous Craft</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/fx.css" />
+  <script>try{if(sessionStorage.getItem("pt")==="1")document.documentElement.classList.add("pt-in")}catch(e){}</script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-emoji">🧩</span>
+        <span>Ubiquitous Craft</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+      </nav>
+      <button id="cart-btn" class="cart-btn" aria-label="Open cart">
+        🛒
+        <span id="cart-badge" class="cart-badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="section" style="padding-top: 40px">
+      <h1 class="font-display" style="font-size: 2.25rem">Shop the catalog</h1>
+      <p class="checkout-sub" id="item-count"></p>
+
+      <div class="filters" id="filters"></div>
+
+      <div class="grid" id="shop-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Ubiquitous Craft — a practice storefront. No real orders are placed here. <a href="images/CREDITS.txt">Image credits</a></p>
+  </footer>
+
+  <div id="cart-overlay" class="overlay"></div>
+  <aside id="cart-drawer" class="drawer">
+    <div class="drawer-head">
+      <h2>Your Cart</h2>
+      <button id="drawer-close" class="drawer-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div id="drawer-body" class="drawer-body"></div>
+    <div id="drawer-footer" class="drawer-footer" style="display: none">
+      <div class="drawer-subtotal">
+        <span>Subtotal</span>
+        <span id="drawer-subtotal-value">$0.00</span>
+      </div>
+      <a href="checkout.html" class="btn btn-dark">Checkout</a>
+    </div>
+  </aside>
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/fx.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
